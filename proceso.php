@@ -11,7 +11,7 @@
     echo $_POST['pnumero'];
     echo $_POST['snumero'];
     echo $_POST['Operacion'];
-    ehco "hice un cambio";
+    echo "hice un cambio";
     ?>
 </body>
 </html>
