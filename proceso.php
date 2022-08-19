@@ -8,10 +8,24 @@
 </head>
 <body>
     <?php
-    echo $_POST['pnumero'];
-    echo $_POST['snumero'];
+    echo $_POST['pnumero'].'<br>';
+    echo $_POST['snumero'].'<br>';
     echo $_POST['Operacion'];
-    echo "hice un cambio";
+    /*--------------------------------------------------
+    CAPTURA DE LOS DATOS EN UNA VARIABLE LOCAL
+    ----------------------------------------------------*/
+    $num1 = $_POST['pnumero'];
+    $num2= $_POST['snumero'];
+    $operacion = $_POST['Operacion'];
+
+    /*---------------------------------------------------
+    VERIFICAR QUE OPERACION SE SELECCIONÓ Y DEPENDIENDE ESTO, MOSTRAMOS EL RESULTADO
+    ---------------------------------------------------------------------------------*/
+    if($operacion=="Suma")
+    {
+        echo "LA SUMA DE LOS NUMEROS ES:----". ($num1 + $num2);
+    }
+
     ?>
 </body>
 </html>
