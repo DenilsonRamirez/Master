@@ -10,7 +10,7 @@
     <?php
     echo $_POST['pnumero'].'<br>';
     echo $_POST['snumero'].'<br>';
-    echo $_POST['Operacion'];
+    //echo $_POST['Operacion'];
     /*--------------------------------------------------
     CAPTURA DE LOS DATOS EN UNA VARIABLE LOCAL
     ----------------------------------------------------*/
@@ -23,9 +23,23 @@
     ---------------------------------------------------------------------------------*/
     if($operacion=="Suma")
     {
-        echo "LA SUMA DE LOS NUMEROS ES:----". ($num1 + $num2);
+        echo "LA SUMA DE LOS NUMEROS ES: ". ($num1 + $num2);
+    }
+    else
+    if($operacion=="Resta")
+    {
+        echo "LA resta DE LOS NUMEROS ES: ". ($num1 - $num2);
+    }
+    else
+    if($operacion=="Multiplicacion")
+    {
+        echo "LA multiplicación DE LOS NUMEROS ES: ". ($num1 * $num2);
     }
 
     ?>
+    <hr>
+    <p>
+        <a href="index.html">HOME</a>
+    </p>
 </body>
 </html>
